@@ -2,4 +2,4 @@
 tasks:
   - name: Script Task
     init: echo 'start init' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'docker-compose up'
+    command: docker-compose up
