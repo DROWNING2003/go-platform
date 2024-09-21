@@ -1,11 +1,9 @@
+image: gitpod/workspace-full
 
 tasks:
-  - name: test
-    openMode: split-left
-
   - name: Run
     command: docker-compose -f docker-compose.yml up
-    openMode: split-right
+    
 ports:
   - port: 6379
     onOpen: ignore
