@@ -1,0 +1,62 @@
+{
+	"uni-app": {
+		"scripts": {
+			"h5-dev": {
+				"title": "h5开发版",
+				"browser": "chrome",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"BASE_URL": "http://127.0.0.1:7080"
+				}
+			},
+			"h5-pre": {
+				"title": "h5测试版",
+				"browser": "chrome",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"BASE_URL": "http://gw.qlime.cn"
+				}
+			},
+			"h5-prod": {
+				"title": "h5正式版",
+				"browser": "chrome",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"BASE_URL": "https://prod-gw.qlime.cn"
+				}
+			},
+			"wx-dev": {
+				"title": "mp开发版",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"BASE_URL": "http://127.0.0.1:7080"
+				}
+			},
+			"wx-pre": {
+				"title": "mp测试版",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"BASE_URL": "http://gw.qlime.cn"
+				}
+			},
+			"wx-prod": {
+				"title": "mp正式版",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"BASE_URL": "http://gw.qlime.cn"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"@climblee/uv-ui": "^1.1.20",
+		"crypto-js": "^4.2.0",
+		"jsencrypt": "^3.3.2",
+		"pdfh5": "^1.4.9",
+		"pinia": "^2.1.7",
+		"vconsole": "^3.15.1"
+	},
+	"devDependencies": {
+		"less": "^4.2.0"
+	}
+}

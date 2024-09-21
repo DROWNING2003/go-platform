@@ -1,0 +1,85 @@
+{
+	"pages": [{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/error/index"
+		},
+		{
+			"path": "pages/user/index"
+		},
+		{
+			"path": "pages/user/login/index"
+		},
+		{
+			"path": "pages/user/login/email"
+		},
+		{
+			"path": "pages/user/login/password"
+		},
+		{
+			"path": "pages/user/info/index"
+		},
+		{
+			"path": "pages/user/feedback/index"
+		},
+		{
+			"path": "pages/user/setting/index"
+		},
+		{
+			"path": "pages/chat/index"
+		}
+		// ,{
+		// 	"path": "pages/app/webview/index"
+		// },
+	],
+	"subPackages": [],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "客户端",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#d81e06",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-act.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user-act.png",
+				"text": "个人"
+			}
+			// ,{
+			// 	"pagePath": "pages/index/apps",
+			// 	"iconPath": "static/tabbar/apps.png",
+			// 	"selectedIconPath": "static/tabbar/apps-act.png",
+			// 	"text": "应用"
+			// // },
+			// {
+			// 	"pagePath": "pages/user/info/index",
+			// 	"iconPath": "static/tabbar/user.png",
+			// 	"selectedIconPath": "static/tabbar/user-act.png",
+			// 	"text": "个人"
+			// }
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "测试", //模式名称
+			"path": "pages/chat/index", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+
+}

@@ -1,0 +1,28 @@
+$fill-color-2: #f2f3f5;
+
+.form {
+	.uv-input {
+		border-radius: 2px !important;
+		background-color: $fill-color-2 !important;
+		border: none !important;
+	}
+
+	.uv-textarea {
+		border-radius: 2px !important;
+		background-color: $fill-color-2 !important;
+		border: none !important;
+		transition: color 0.1s cubic-bezier(0, 0, 1, 1), border-color 0.1s cubic-bezier(0, 0, 1, 1),
+			background-color 0.1s cubic-bezier(0, 0, 1, 1);
+		position: relative;
+		@include flex;
+		flex: 1;
+		padding: 9px;
+
+		&--disabled {
+			background-color: #f5f7fa;
+		}
+		&__count {
+			background-color: $fill-color-2 !important;
+		}
+	}
+}
